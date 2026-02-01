@@ -9,15 +9,17 @@ return {
       end,
       desc = 'Explorer NeoTree (Root Dir)',
     },
-    -- {
-    --   '<leader>fE',
-    --   function()
-    --     require('neo-tree.command').execute { toggle = true, dir = vim.uv.cwd() }
-    --   end,
-    --   desc = 'Explorer NeoTree (cwd)',
-    -- },
-    -- { '<leader>e', '<leader>fe', desc = 'Explorer NeoTree (Root Dir)', remap = true },
-    -- { '<leader>E', '<leader>fE', desc = 'Explorer NeoTree (cwd)', remap = true },
+    {
+      '<leader>fE',
+      function()
+        require('neo-tree.command').execute { toggle = true, dir = vim.uv.cwd() }
+      end,
+      desc = 'Explorer NeoTree (cwd)',
+      false,
+    },
+    { '<leader>fe', false },
+    { '<leader>e', '<leader>fe', desc = 'Explorer NeoTree (Root Dir)', remap = true, false },
+    { '<leader>E', '<leader>fE', desc = 'Explorer NeoTree (cwd)', remap = true },
     {
       '<leader>ge',
       function()
