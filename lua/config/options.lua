@@ -19,5 +19,3 @@ vim.o.breakindent = true
 vim.o.scrolloff = 10
 
 vim.g.have_nerd_font = true
-
-LazyVim.terminal.setup 'pwsh'
