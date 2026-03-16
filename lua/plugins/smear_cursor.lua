@@ -14,4 +14,5 @@ return {
     never_draw_over_target = true,
     legacy_computing_symbols_support = true,
   },
+  enabled = false,
 }
