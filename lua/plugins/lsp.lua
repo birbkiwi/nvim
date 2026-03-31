@@ -57,6 +57,10 @@ return {
     }
 
     opts.keys = keys
+
+    opts.servers['vtsls'] = false
+    opts.servers['tsgo'] = {}
+
     return opts
   end,
 }
