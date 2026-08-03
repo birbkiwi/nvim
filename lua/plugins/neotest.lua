@@ -6,7 +6,6 @@ return {
   opts = {
     adapters = {
       ['neotest-vitest'] = {},
-      ['easy-dotnet.neotest'] = {},
     },
   },
 }
