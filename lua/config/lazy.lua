@@ -61,8 +61,6 @@ require('lazy').setup {
         mode = { 'n', 'x' },
         desc = 'Format Injected Langs',
       },
-
-    }
-  }
-
+    },
+  },
 }

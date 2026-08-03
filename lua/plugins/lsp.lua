@@ -13,7 +13,7 @@ return {
       },
       { 'gd', vim.lsp.buf.definition, desc = 'Goto Definition', has = 'definition' },
       { 'gr', vim.lsp.buf.references, desc = 'References', nowait = true },
-      { 'g', vim.lsp.buf.implementation, desc = 'Goto Implementation' },
+      { 'gi', vim.lsp.buf.implementation, desc = 'Goto Implementation' },
       { 'gt', vim.lsp.buf.type_definition, desc = 'Goto T[y]pe Definition' },
       { 'gD', vim.lsp.buf.declaration, desc = 'Goto Declaration' },
       {
@@ -59,7 +59,9 @@ return {
     opts.keys = keys
 
     opts.servers['vtsls'] = false
-    opts.servers['tsgo'] = {}
+    opts.servers['tsgo'] = false
+
+    opts.inlay_hints.exclude = { 'cs' }
 
     return opts
   end,

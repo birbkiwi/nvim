@@ -19,3 +19,5 @@ vim.o.breakindent = true
 vim.o.scrolloff = 10
 
 vim.g.have_nerd_font = true
+
+-- vim.g.lazyvim_ts_lsp = "tsgo"
