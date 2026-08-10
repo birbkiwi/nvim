@@ -12,7 +12,6 @@ vim.g.autoformat = false
 
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
--- Enable break indent
 vim.o.breakindent = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
